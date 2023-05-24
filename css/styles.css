@@ -22,7 +22,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
-  width: 1600px;
+  width: auto;
   letter-spacing: 0.03em;
 }
 
@@ -96,7 +96,7 @@ button {
 }
 
 .contact-footer {
-  padding: 60px 0px 60px 15px;
+  padding: 60px 0px 60px 0px;
 }
 
 .contact-footer :not(:first-child) {
@@ -170,7 +170,6 @@ header {
   font-weight: 500;
   font-size: 14px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 24px 15px 25px 15px;
   letter-spacing: 0.02em;
@@ -186,11 +185,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  /* align-content: baseline; */
 }
 
 .nav-manu-second {
-  display: flex;
+  align-items: center;
   justify-content: flex-end;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: flex-start;
+  padding: 0px 15px 25px 15px;
+  letter-spacing: 0.02em;
+  align-content: baseline;
+  display: flex;
 }
 
 .agencja-pad {
@@ -212,7 +219,7 @@ header {
 .lorem-list {
   display: flex;
   padding-bottom: 94px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .lorem-list p {
@@ -256,7 +263,8 @@ ul[class='img-display'] > li {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0 15px;
+  /* padding: 0 px; */
+  justify-content: space-between;
 }
 .grid-border {
   border: 1px solid var(--grid-border);
@@ -266,14 +274,16 @@ ul[class='img-display'] > li {
 .grid-header {
   font-weight: 700;
   letter-spacing: 0.06em;
-  padding: 20px 0 4px 24px;
+  padding: 20px 0 4px 0px;
   line-height: 2em;
+  justify-content: space-between;
 }
 
 .grid-caption {
   line-height: 1.875em;
-  padding: 0 0 20px 24px;
+  padding: 0 0 20px 0px;
   color: var(--brand-color-grey);
+  justify-content: space-between;
 }
 
 .img-grid img {
