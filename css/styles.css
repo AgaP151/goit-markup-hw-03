@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -22,8 +27,13 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
-  width: auto;
+  width: 1600px;
   letter-spacing: 0.03em;
+}
+header {
+  max-width: auto;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border-header);
 }
 
 :root {
@@ -164,6 +174,7 @@ h4 {
 
 header {
   border-bottom: 1px solid var(--header-border);
+  /* display: flexbox; */
 }
 
 .navigation {
@@ -171,33 +182,37 @@ header {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 24px 15px 25px 15px;
   letter-spacing: 0.02em;
+}
+.flex-style {
+  display: flex;
 }
 
 .webstudio-style {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   letter-spacing: 0.03em;
+  padding-top: 15px;
 }
 
 .nav-manu-first {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
   /* align-content: baseline; */
 }
 
 .nav-manu-second {
-  align-items: center;
   justify-content: flex-end;
   font-weight: 500;
   font-size: 14px;
-  align-items: flex-start;
-  padding: 0px 15px 25px 15px;
+  padding: 24px 15px 25px 15px;
   letter-spacing: 0.02em;
   align-content: baseline;
   display: flex;
+  /* margin-left: 371px; */
 }
 
 .agencja-pad {
@@ -206,10 +221,21 @@ header {
 
 .portfolio-kontakt-pad {
   padding-left: 46px;
+  align-items: flex-start;
 }
-
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
 .mail-pad {
   padding-right: 50px;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.tel-pad {
+  list-style-type: none;
+  justify-content: flex-end;
 }
 
 .section {
@@ -234,7 +260,7 @@ header {
 
 .img-display {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 ul[class='img-display'] > li {
