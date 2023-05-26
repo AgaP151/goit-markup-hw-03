@@ -27,7 +27,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
-  width: 1600px;
+  width: auto;
   letter-spacing: 0.03em;
 }
 header {
@@ -182,37 +182,43 @@ header {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 24px 15px 25px 15px;
+  align-items: center;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 .flex-style {
   display: flex;
+  justify-content: space-between;
 }
 
 .webstudio-style {
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   letter-spacing: 0.03em;
   padding-top: 15px;
+  flex-wrap: nowrap;
+  margin: 24px 93px 25px 0px;
 }
 
 .nav-manu-first {
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
-  /* align-content: baseline; */
+
+  /* align-items: flex-start; */
+  /* justify-content: ; */
+  justify-content: space-between;
+  /* margin-left: 93px; */
 }
 
 .nav-manu-second {
-  justify-content: flex-end;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 14px;
-  padding: 24px 15px 25px 15px;
+  margin: 50px 50px 32px 0px;
   letter-spacing: 0.02em;
   align-content: baseline;
   display: flex;
-  /* margin-left: 371px; */
+  align-items: center;
 }
 
 .agencja-pad {
@@ -226,7 +232,6 @@ header {
 .display {
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
 }
 .mail-pad {
   padding-right: 50px;
