@@ -63,11 +63,11 @@ a {
 address {
   font-style: normal;
 }
-
+/* 
 a:hover,
 a:focus {
   color: var(--brand-color-blue);
-}
+} */
 
 button:focus,
 button:hover {
@@ -121,7 +121,10 @@ button {
 .transparent-text {
   opacity: 0.6;
 }
-
+.transparent-text:hover,
+.transparent-text:focus {
+  color: var(--brand-color-blue);
+}
 .background-dark {
   background-color: var(--background-dark);
 }
@@ -174,7 +177,7 @@ h4 {
 
 header {
   border-bottom: 1px solid var(--header-border);
-  /* display: flexbox; */
+  height: 80px;
 }
 
 .navigation {
@@ -189,6 +192,8 @@ header {
 .flex-style {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .webstudio-style {
@@ -196,9 +201,9 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   letter-spacing: 0.03em;
-  padding-top: 15px;
+  /* padding-top: 15px; */
   flex-wrap: nowrap;
-  margin: 24px 93px 25px 0px;
+  /* margin: 24px 93px 25px 0px; */
 }
 
 .nav-manu-first {
@@ -214,7 +219,7 @@ header {
   justify-content: space-between;
   font-weight: 500;
   font-size: 14px;
-  margin: 50px 50px 32px 0px;
+  /* margin: 50px 50px 32px 0px; */
   letter-spacing: 0.02em;
   align-content: baseline;
   display: flex;
@@ -224,11 +229,23 @@ header {
 .agencja-pad {
   padding-left: 93px;
 }
-
+.agencja-pad:hover,
+.agencja-pad:focus {
+  color: var(--brand-color-blue);
+}
 .portfolio-kontakt-pad {
   padding-left: 46px;
   align-items: flex-start;
 }
+.portfolio-kontakt-pad:hover,
+.portfolio-kontakt-pad:focus {
+  color: var(--brand-color-blue);
+}
+.decoration-text:hover,
+.decoration-text:focus {
+  color: var(--brand-color-blue);
+}
+
 .display {
   display: flex;
   justify-content: flex-end;
@@ -241,6 +258,10 @@ header {
 .tel-pad {
   list-style-type: none;
   justify-content: flex-end;
+}
+.contact-navi:hover,
+.contact-navi:focus {
+  color: var(--brand-color-blue);
 }
 
 .section {
